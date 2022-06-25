@@ -1,0 +1,388 @@
+{
+	"info": {
+		"_postman_id": "9f651bc3-c414-4ca1-a6c0-9c53c7f927cf",
+		"name": "api-votaluan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19676201"
+	},
+	"item": [
+		{
+			"name": "candidato",
+			"item": [
+				{
+					"name": "incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numero\": \"99549\",\r\n    \"nome\": \"test luan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/candidato/incluir",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"candidato",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/candidato/1/excluir",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"candidato",
+								"1",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/candidato/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"candidato",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/candidato/1/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"candidato",
+								"1",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "eleicao",
+			"item": [
+				{
+					"name": "incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"Eleicao para test luan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/eleicao/incluir",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"eleicao",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/eleicao/1/excluir",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"eleicao",
+								"1",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/eleicao/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"eleicao",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/eleicao/1/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"eleicao",
+								"1",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "eleitor",
+			"item": [
+				{
+					"name": "excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/eleitor/1/excluir",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"eleitor",
+								"1",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": \"366\",\r\n    \"nome\": \"luan\",\r\n    \"email\": \"luan@infnet.com\",\r\n    \"telefone\": \"99885-5548\",\r\n    \"token\": \"mdlkçasjsdfsdjdkas99989teste\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/eleitor/incluir",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"eleitor",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/eleitor/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"eleitor",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/eleitor/1/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"eleitor",
+								"1",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "voto",
+			"item": [
+				{
+					"name": "incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"localizacao\": \"Escola infnet\",\r\n        \"eleitor\": {\r\n            \"id\": 1\r\n        },\r\n        \"candidato\": {\r\n            \"id\": 1\r\n        },\r\n        \"eleicao\": {\r\n            \"id\": 1\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/voto/incluir",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"voto",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/voto/1/excluir",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"voto",
+								"1",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/voto/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"voto",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
