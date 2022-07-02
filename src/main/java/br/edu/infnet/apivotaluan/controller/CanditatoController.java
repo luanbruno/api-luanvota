@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.edu.infnet.apivotaluan.model.domain.Candidato;
 import br.edu.infnet.apivotaluan.model.service.CandidatoService;
+import br.edu.infnet.apivotaluan.model.service.EleicaoService;
 
 @RestController
 @RequestMapping(value = "/api/candidato")
@@ -20,15 +21,22 @@ public class CanditatoController {
 
 	@Autowired
 	private CandidatoService candidatoService;
+	
+	@Autowired
+	private EleicaoService eleicaoService;
 
 	@GetMapping(value = "/listar")
 	public List<Candidato> obterLista() {
 	return candidatoService.obterLista();
 	}
 
-	@GetMapping(value="/{idCandidato}/listar")
+	@GetMapping(value="/{idCandidato}/obter")
 	public Candidato obterPorId(@PathVariable int idCandidato) {
 		return candidatoService.obterPorId(idCandidato);
+	}
+	@GetMapping(value="/{idEleicao}/listar")
+	public List<Candidato> obterPorEleicao(@PathVariable int idEleicao) {		
+		return candidatoService.obterPorEleicao(eleicaoService.obterPorId(idEleicao));
 	}
 
 	@PostMapping(value = "/incluir")
